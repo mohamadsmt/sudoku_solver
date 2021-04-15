@@ -1,16 +1,3 @@
-myboard = [
-    [0, 0, 0, 0, 6, 8, 0, 3, 0],
-    [1, 9, 0, 0, 0, 0, 0, 0, 0],
-    [8, 0, 3, 1, 0, 0, 2, 0, 0],
-    [4, 0, 0, 0, 5, 1, 0, 6, 0],
-    [7, 0, 0, 0, 2, 0, 0, 0, 4],
-    [0, 0, 0, 0, 7, 0, 8, 0, 0],
-    [0, 1, 0, 0, 0, 5, 0, 0, 7],
-    [0, 0, 4, 0, 0, 0, 0, 0, 0],
-    [0, 5, 0, 0, 3, 0, 1, 0, 0]
-]
-
-
 def solve(bo):
     find = find_empty(bo)
     if not find:
@@ -75,9 +62,3 @@ def find_empty(bo):
                 return (i, j)  # row, col
 
     return None
-
-print_board(myboard)
-solve(myboard)
-print("_________solved_________")
-print_board(myboard)
-
